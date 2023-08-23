@@ -37,5 +37,5 @@ console.log('\n***');
 console.log(apple);
 
 
-//reassignable [let]
+//reassignable [let , const]
 //mutable [let, const]
