@@ -1,0 +1,12 @@
+object {key : value}
+
+basic let a = 123;
+
+primative data -> data or stack
+object -> using heap // assigning to heap
+
+let apple ={
+    name : 'apple',
+    color : 'red',
+    boxNum : 7
+}
