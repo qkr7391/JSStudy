@@ -1,0 +1,23 @@
+
+
+# Function
+
+> A set of code that does something specific
+
+* Reusable
+* Highly readable
+* Maintainable
+
+ex)
+function add(a, b){
+    return a + b;
+};
+
+const sum = add;
+
+** The name of the function references the function.
+(Important - call back function ...)
+
+
+1) MDN Function
+: https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/function
