@@ -1,0 +1,9 @@
+# Callback function
+
+* first-class function
+> Functions can perform all operations like regular objects.
+Java / Swift / Kottline / Python
+
+
+* Higher-order function
+> Function takes another function as an arguments (callback function) or returns a function.
