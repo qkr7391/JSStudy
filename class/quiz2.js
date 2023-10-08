@@ -50,16 +50,16 @@ class Employees {
 }
 
 class fulltimeE extends Employees {
-	static PAY_RATE = 10000;
+	static #PAY_RATE = 10000;
 	constructor(fullName, department, hoursperMon) {
-		super(fullName, department, hoursperMon, fulltimeE.PAY_RATE);
+		super(fullName, department, hoursperMon, fulltimeE.#PAY_RATE);
 	}
 }
 
 class parttimeE extends Employees {
-	static PAY_RATE = 8000;
+	static #PAY_RATE = 8000;
 	constructor(fullName, department, hoursperMon) {
-		super(fullName, department, hoursperMon, parttimeE.PAY_RATE);
+		super(fullName, department, hoursperMon, parttimeE.#PAY_RATE);
 	}
 }
 
