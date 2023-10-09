@@ -8,6 +8,7 @@ console.log(Array.isArray({})); //false
 
 // find the location index of specific item
 console.log(fruits.indexOf("🍎")); // 0
+console.log("nothing", fruits.indexOf("🍌")); // -1
 
 // check the item is in the array or not
 console.log(fruits.includes("🍎")); // true
