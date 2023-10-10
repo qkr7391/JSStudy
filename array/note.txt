@@ -1,0 +1,21 @@
+first-class object
+> Something that can be operated on like a normal object.
+
+Passing as a function parameter
+The return value of a function
+Assignment statements
+Compare to
+
+
+Higher-order functions
+- Receive a function as an argument (callback function) or use the
+- Functions that return a function
+
+
+Functional programming
+- Immutability
+- No data changes
+- No variables
+- No conditional statements
+- No loops
+- Reduce errors and improve readability
