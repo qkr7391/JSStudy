@@ -50,3 +50,54 @@ console.log(result); //false
 //Return all items meeting the condition in a new array
 result = store.filter((item) => item.name === "🍔");
 console.log(result);
+
+//************************* */
+console.clear();
+
+//Map >> transform the items emitted by an Observable by applying a function to each item
+const nums = [1, 2, 3, 4, 5];
+result = nums.map((item) => item * 2);
+console.log(result);
+
+result = nums.map((item) => {
+	if (item % 2 === 0) {
+		return item * 2;
+	} else {
+		return item;
+	}
+});
+console.log(result);
+
+//Flatmap : transform the items emitte by an Observable into Observables, then flatten the emissions from those into a single Observable
+result = nums.map((item) => [1, 2]);
+console.log(result);
+
+result = nums.flatMap((item) => [1, 2]);
+console.log(result);
+
+result = ["semper", "coding"].map((text) => text.split(""));
+console.log(result);
+
+result = ["semper", "coding"].flatMap((text) => text.split(""));
+console.log(result);
+
+//sort : edit origin array
+const texts = ["hi", "abd"];
+texts.sort();
+console.log(texts);
+
+const numbers = [0, 5, 4, 2, 1, 10];
+numbers.sort();
+console.log(numbers); // 10 is not correct
+numbers.sort((a, b) => a - b); // < 0 : a, b ||| > 0 : b, a
+console.log(numbers);
+
+//reduce : apply a function to each item emitted by an Observable, sequentially, and emit the final value
+result = [1, 2, 3, 4, 5].reduce((sum, value) => {
+	sum += value;
+	return sum;
+}, 0); // 0: initial value for sum
+console.log(result);
+//same /: simplify
+result = [1, 2, 3, 4, 5].reduce((sum, value) => (sum += value), 0);
+console.log(result);
