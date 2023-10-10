@@ -49,3 +49,21 @@ console.log(age);
 // console.log(job);
 console.log(occupation);
 console.log(pet);
+
+console.clear();
+
+/////////quiz
+const prop = {
+	name: "Button",
+	styles: {
+		size: 20,
+		color: "black",
+	},
+};
+
+//prop.styles.color >> ???
+// function changeColor({ name, styles: { size, color } }) {
+function changeColor({ styles: { color } }) {
+	console.log(color);
+}
+changeColor(prop);
