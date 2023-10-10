@@ -12,9 +12,11 @@ increase();
 increase();
 const count = getCount();
 console.log(count);
+
 // increase1();
 // increase1();
 // increase1();
+
 // console.log(count);
 // count = -10;
 // console.log(count);
