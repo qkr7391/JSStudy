@@ -52,7 +52,7 @@ result = store.filter((item) => item.name === "🍔");
 console.log(result);
 
 //************************* */
-console.clear();
+// console.clear();
 
 //Map >> transform the items emitted by an Observable by applying a function to each item
 const nums = [1, 2, 3, 4, 5];
