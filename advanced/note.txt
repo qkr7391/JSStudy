@@ -68,3 +68,5 @@ Conclusion : child scope can access parent scope variable becaue of Lexical Envi
 
 
 
+4. Hoisting
+>> Refers to the fact that the Javascript engine (interpreter) pulls up the declarations of variables, functions, and classes before executing the code.
