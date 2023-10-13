@@ -64,4 +64,7 @@ const a = 1; // global Lexical [EV : a=1 || OLER : I'm PARENT]
 ** OLER is scope chain(ing)
 
 
-Conclusion : child scope can access parent scope variable becaue of Lexical Environtment
+Conclusion : child scope can access parent scope variable becaue of Lexical Environtment.
+
+
+
