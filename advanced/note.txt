@@ -74,3 +74,7 @@ Conclusion : child scope can access parent scope variable becaue of Lexical Envi
 
 
 5. var / let / const
+
+
+
+6. strict mode
