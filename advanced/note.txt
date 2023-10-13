@@ -1,0 +1,22 @@
+Advanced JavaScript
+
+1. Scopㄷ
+: Regions
+- Valid scope for referencing variables
+- The valid scope of an identifier (variable, function, class) is determined by where it is declared
+>> The valid scope is determined by where it is declared.
+
+{
+ A variable inside a block is valid only within the block 
+}
+
+ex)
+{
+    a //only available in this block
+}
+a // (not able to use)
+>> Variables should be defined where they are needed
+
+* Why do we need 'scope' ?
+>> For avoiding name collisions, and saving memory
+
