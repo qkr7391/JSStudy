@@ -37,3 +37,31 @@ AT THAT TIME!!!!!!!
 When nothing is referencing the object, GC is appearncing >> clean Garbage
 "Background Process"
 
+
+
+3. Execution Context
+>> It remembers the execution order and scope of the code.
+
+const a = 1; // global scope
+{
+    const a = 2; // block scope 1
+    {
+        const a = 3; // block scope 2
+    }
+}
+
+*Lexical Environtment >> Each block has this object that has information of block
+>> Environtment Record : Have data
+>> Outer Lexical Environtment Reference : Ponting Parent Lexical Environtment
+
+const a = 1; // global Lexical [EV : a=1 || OLER : I'm PARENT]
+{
+    const a = 2; // block 1 Lexical [EV : a=2 || OLER : Pointing global Lexical Environtment]
+    {
+        const a = 3; // block 2 Lexical [EV : a=3 || OLER : Pointing block 1 Lexical Environtment]
+    }
+}
+** OLER is scope chain(ing)
+
+
+Conclusion : child scope can access parent scope variable becaue of Lexical Environtment
