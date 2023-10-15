@@ -1,0 +1,30 @@
+** Closures
+: A closure is the combination of a function bundled
+together(enclosed) with references to its surrounding state
+(the lexical environment).
+In other words, a closure gives you access to an outer function's
+scope from an inner function.
+
+function outer(){
+    const x = 0;
+    function inner(){
+        x;
+    }
+    inner;
+}
+other;
+stack >>  global lexical environment -> (declare) -> call outer()
+-> outer lexical environment (x = 0) -> (declare) -> call inner()
+-> inner lexical environment -> out inner -> out outer -> terminal
+
+function outer(){
+    const x = 0;
+    function inner(){
+        x;
+    }
+    return inner;
+}
+const inner = outer();
+inner();
+stack >>  global lexical environment -> (declare) -> call outer()
+-> outer lexical environment (x = 0) -> (declare) -> out inner -> out outer -> terminal
