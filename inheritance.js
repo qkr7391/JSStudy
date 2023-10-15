@@ -1,4 +1,4 @@
-// oop - inheritance
+// oop - inheritance //prototype based oop
 function Animal(name, emoji) {
 	this.name = name;
 	this.emoji = emoji;
