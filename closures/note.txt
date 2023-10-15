@@ -28,3 +28,7 @@ const inner = outer();
 inner();
 stack >>  global lexical environment -> (declare) -> call outer()
 -> outer lexical environment (x = 0) -> (declare) -> out inner -> out outer -> terminal
+
+
+// A closure is when functions are nested so that the inner function can access the outer function's lexical environment, and thus the outer environment can be accessed.
+// Closures are used to hide internal information and manipulate data through public functions.
