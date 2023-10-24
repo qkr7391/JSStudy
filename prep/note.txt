@@ -1,3 +1,0 @@
-*Data type
-primitive -> number, string, boolean, null, undefined
-object -> object(array), function
