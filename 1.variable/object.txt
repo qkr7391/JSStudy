@@ -1,0 +1,56 @@
+object {key : value}
+
+basic let a = 123;
+
+primative data -> data or stack
+object -> using heap // assigning to heap
+
+let apple ={
+    name : 'apple',
+    color : 'red',
+    boxNum : 7
+}
+
+
+*********************
+primative >> 
+let a = 123;  -->>  a is pointing 0x000006(address) that has value 123.
+
+
+object >>
+let apple ={
+    name : 'apple',
+    color : 'red',
+    boxNum : 7
+}
+
+-->> apple is pointing 0x000006(reference address) that has address(0x00000A) that hse value {
+    name : 'apple',
+    color : 'red',
+    boxNum : 7
+}
+
+
+
+>>>>>>>>>>>>>>>
+primative >>
+let a = 1; (0x000006 address has value 1)
+let b = a; (0x000008 address ha value 1)
+[copy by value]
+let a = 1; (0x000006 address has value 1) //not be changed
+let b = 2; (0x000008 address ha value 2)
+
+
+object >>
+let apple = {
+    name : 'apple'
+}                        //(0x000006 address has 0x00000A)
+
+let orange = apple;      //(0x000008 address has 0x00000A)
+[copy by reference]
+apple.name = 'orange' --> 
+apple = {
+    name : 'orange'
+}     
+
+>> apple.name = orange && orange.name = orange
